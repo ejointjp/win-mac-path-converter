@@ -46,7 +46,7 @@ function App () {
   return (
     <div className="App">
       <div className="container mx-auto px-4">
-        <h1 className="text-2xl font-semibold mt-10">WindowsとMacのパスを相互変換</h1>
+        <h1 className="text-2xl font-semibold mt-10">Win - Mac Path Converter</h1>
         <div className="my-10 flex flex-col items-center">
           <input
             className="border p-2.5 rounded-md max-w-full"
@@ -56,6 +56,7 @@ function App () {
             size="100"
             onChange={(e) => setText(e.target.value)}
             onKeyDown={(e) => onKeyDown(e.key)}
+            autoFocus={true}
           />
           <button
             className="bg-sky-500 text-white w-[10rem] max-w-full py-2.5 px-6 rounded-md font-semibold mt-4"
