@@ -46,7 +46,8 @@ function App () {
   return (
     <div className="App">
       <div className="container mx-auto px-4">
-        <h1 className="text-2xl font-semibold mt-10">Win - Mac Path Converter</h1>
+        <h1 className="text-2xl md:text-3xl font-semibold mt-10">Win - Mac Path Converter</h1>
+        <p className="text-sm mt-4 text-zinc-600">WindowsとMacのPathを相互に変換</p>
         <div className="my-10 flex flex-col items-center">
           <input
             className="border p-2.5 rounded-md max-w-full"
