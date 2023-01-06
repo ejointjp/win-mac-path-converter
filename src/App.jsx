@@ -81,6 +81,10 @@ function App () {
           </>
         }
       </div>
+
+      <div className="px-4 mt-24">
+        <p className="text-xs">&copy; 2023 <a className="hover:underline" href="https://e-joint.jp" target="_blank" rel="noreferrer">e-JOINT.jp</a></p>
+      </div>
     </div>
   )
 }
