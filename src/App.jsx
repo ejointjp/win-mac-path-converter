@@ -46,11 +46,11 @@ function App () {
   return (
     <div className="App">
       <div className="container mx-auto px-4">
-        <h1 className="text-2xl md:text-3xl font-semibold mt-10">Win - Mac Path Converter</h1>
-        <p className="text-sm mt-4 text-zinc-600">WindowsとMacのPathを相互に変換</p>
+        <h1 className="text-3xl md:text-4xl font-semibold mt-10">Win - Mac Path Converter</h1>
+        <p className="text-sm mt-4">WindowsとMacのPathを相互に変換</p>
         <div className="my-10 flex flex-col items-center">
           <input
-            className="border p-2.5 rounded-md max-w-full"
+            className="border border-blue-100 p-2.5 rounded-md max-w-full bg-white font-bold"
             name="input"
             type="text"
             placeholder="Win または Macのパスを入力してEnter"
@@ -60,7 +60,7 @@ function App () {
             autoFocus={true}
           />
           <button
-            className="bg-sky-500 text-white w-[10rem] max-w-full py-2.5 px-6 rounded-md font-semibold mt-4"
+            className="bg-blue-900 text-white w-[10rem] max-w-full py-2.5 px-6 rounded-md font-semibold mt-4"
             onClick={changePath}>
             パスを変換
           </button>
@@ -73,7 +73,7 @@ function App () {
           result &&
           <>
             {/* <ResultMessage /> */}
-            <p className="bg-zinc-200 p-2.5 rounded-md mt-2">{result}</p>
+            <p className="bg-zinc-200 p-2.5 rounded-md mt-2 font-bold">{result}</p>
             {
               pathIs !== 'error' &&
               <p className="border border-sky-200 bg-sky-50 text-sky-600 text-xs inline-block p-1.5 rounded mt-3">クリップボードにコピーしました</p>
